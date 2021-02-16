@@ -1,0 +1,1737 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body,
+input,
+textarea,
+button {
+	font-size: 16px;
+	color: #4e4e4e;
+	font-family: 'Proxima Nova Rg';
+}
+body {
+	overflow-x: hidden !important;
+	font-family: 'Proxima Nova Rg';
+	font-weight: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #292929;
+	margin: 0;
+}
+
+h1 {
+	font-size: 34px;
+	color: #262b6a;
+	font-weight: 400;
+}
+
+h2 {
+	font-size: 28px;
+	color: #292929;
+	font-weight: 400;
+}
+
+h3 {
+	font-size: 27px;
+	color: #262b6a;
+	font-weight: 700;
+}
+
+h4 {
+	font-size: 22px;
+	color: #292929;
+}
+
+h5 {
+	font-size: 15px;
+	color: #262b6a;
+	font-weight: 700;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	color: #262b6a;
+	outline: none;
+	transition: 0.3s all ease;
+	display: inline-block;
+}
+
+a:hover,
+a:focus {
+	text-decoration: none;
+}
+
+p {
+	margin: 0;
+	color: #033B2F;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+/* Container */
+.container {
+	max-width: 1194px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+/* Container End */
+
+.no-pad {
+	padding: 0;
+}
+
+.no-padding {
+	margin: 0;
+}
+
+.no-padding>[class*=col-] {
+	padding: 0;
+}
+
+.text-align-right {
+	text-align: right;
+}
+
+.body-wrapper {
+	width: 100%;
+	overflow-x: hidden;
+}
+
+.calendly-badge-widget {
+	display: none;
+}
+
+/* font starts here */
+@font-face {
+	font-family: 'Proxima Nova Th';
+	src: url('../fonts/ProximaNova-Extrabld.woff2') format('woff2'),
+		url('../fonts/ProximaNova-Extrabld.woff') format('woff');
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Proxima Nova Rg';
+	src: url('../fonts/ProximaNova-Bold.woff2') format('woff2'),
+		url('../fonts/ProximaNova-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Proxima Nova Th';
+	src: url('../fonts/ProximaNovaT-Thin.woff2') format('woff2'),
+		url('../fonts/ProximaNovaT-Thin.woff') format('woff');
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Proxima Nova Alt Lt';
+	src: url('../fonts/ProximaNovaA-Light.woff2') format('woff2'),
+		url('../fonts/ProximaNovaA-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Proxima Nova Alt Rg';
+	src: url('../fonts/ProximaNovaA-Bold.woff2') format('woff2'),
+		url('../fonts/ProximaNovaA-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Proxima Nova Rg';
+	src: url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+		url('../fonts/ProximaNova-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Proxima Nova Alt Th';
+	src: url('../fonts/ProximaNovaA-Thin.woff2') format('woff2'),
+		url('../fonts/ProximaNovaA-Thin.woff') format('woff');
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Proxima Nova Bl';
+	src: url('../fonts/ProximaNova-Black.woff2') format('woff2'),
+		url('../fonts/ProximaNova-Black.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+/* font here here */
+
+/* header css starts here */
+.header-wrap {
+	background: #FFFFFF;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+	height: 80px;
+	display: flex;
+	align-items: center;
+}
+
+.header-wrap .navbar {
+	padding: 0;
+}
+/* #navbar_top{
+	background-color: #fff;
+	
+} */
+.shrink {
+	background-color: #fff;
+	height: 80px;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+	display: flex;
+	align-items: center;
+	transition: all ease 0.8s;
+}
+.header-wrap .fixed-top{
+	top: unset;
+}
+.header-wrap .navbar-brand {
+	width: 206px;
+	padding: 0;
+	margin: 0;
+}
+
+.header-wrap .navbar-nav .nav-item {
+	margin-right: 30px;
+	display: flex;
+	align-items: center;
+}
+
+.header-wrap .navbar-nav .nav-item a {
+	transition: 0.4s all ease;
+	padding: 0;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 28px;
+	text-transform: uppercase;
+	color: #033B2F;
+	opacity: 0.8;
+	padding: 15px 0;
+	border-top: 3px solid #fff;
+	border-bottom: 3px solid #fff;
+}
+.header-wrap .navbar-nav .nav-item a:hover {
+	padding: 7px 0;
+	border-top: 3px solid #BBD86E;
+	border-bottom: 3px solid #BBD86E;
+}
+.consultation-btn{
+	font-weight: bold !important;
+}
+.mobile-logo {
+	display: none;
+}
+
+.banner-logo {
+	display: none;
+}
+
+/* .mobile-logo {} */
+
+/* header css ends here */
+/* hero section css starts here */
+
+#hero-area {
+	padding-top: 54px;
+	padding-bottom: 95px;
+}
+
+.banner-flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Hero Content Styles */
+/* .hero-wrapper{
+	overflow-x: hidden !important;
+} */
+/* .hero-content{
+	overflow: hidden !important;
+} */
+.hero-subtitle {
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 1.2;
+	color: #B5D659;
+}
+
+.hero-title {
+	font-size: 60px;
+	line-height: 1.1;
+	font-weight: bolder;
+	color: #033B2F;
+}
+
+.hero-text {
+	font-size: 18px;
+	line-height: 1.55;
+	margin-bottom: 30px;
+	margin-top: 12px;
+	max-width: 435px;
+}
+
+.popup-btn-wrap {
+	position: relative;
+	margin-top: 60px;
+}
+
+.popup-btn-wrap button::before {
+	position: absolute;
+	content: '';
+	width: 56px;
+	height: 56px;
+	border: 3px solid #B5D659;
+	z-index: -1;
+	top: 50%;
+	left: -20px;
+	transform: translateY(-50%);
+	transition: all ease 1s;
+}
+
+.popup-btn-wrap .popup-btn {
+	font-size: 22px;
+	line-height: 1.4;
+	letter-spacing: 1px;
+	font-weight: bold;
+	color: #033B2F;
+	text-transform: uppercase;
+	background: #fff;
+	position: relative;
+	cursor: pointer;
+	margin-left: 20px;
+
+}
+.popup-btn-wrap .popup-btn:hover::before{
+	width: 115%;
+}
+/* #page-region ._3i0k6___Layout__cls1 ._2LpwQ___Wrapper__cls1._1cMla___Wrapper__media-tablet-up{
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+} */
+.calendly-overlay .calendly-popup {
+    height: 100% !important;
+    max-height: unset !important;
+}
+
+/* Hero View Styles */
+.hero-grid-container {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 15px;
+}
+
+.hero-grid-item {
+	margin: 0;
+}
+
+.hero-grid-item img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	object-fit: cover;
+	border-radius: 8px;
+}
+
+.hero-grid-item-1 {
+	grid-row: 1 / 2;
+	grid-column: 1 / 2;
+}
+
+.hero-grid-item-2 {
+	grid-row: 1 / 3;
+	grid-column: 2 / 3;
+}
+
+.hero-grid-item-3 {
+	grid-row: 3 / 2;
+	grid-column: 1 / 2;
+}
+
+.hero-views {
+	position: relative;
+}
+
+.hero-views::before {
+	position: absolute;
+	content: '';
+	width: 0%;
+	height: 0%;
+	border: 6px solid #BBD86E;
+	z-index: -1;
+	right: -5%;
+	top: -3.5%;
+	animation: green 4s forwards;
+}
+@keyframes green{
+	0% {
+		width: 0;
+		height: 0;
+	}
+	
+	100%{
+		width: 84%;
+		height: 90%;
+	}
+}
+
+/* hero section css ends here */
+/* health care css starts here */
+.union-wrapper {
+	background-image: url(../images/Union.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	padding-top: 430px;
+
+}
+
+.union-wrapper .union-inner {
+	position: relative;
+	top: -438px;
+}
+
+.union-wrapper .consult {
+	background: #F3F5EE;
+	box-shadow: 0px 6px 10px rgba(3, 59, 47, 0.13);
+	border-radius: 8px;
+	padding: 40px 54px 80px 54px;
+	text-align: center;
+	height: 100%;
+}
+
+.union-wrapper .consult img {
+	width: 111px;
+}
+
+.union-wrapper .consult h3 {
+	font-family: 'Proxima Nova Rg';
+	margin-top: 35px;
+	margin-bottom: 24px;
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 34px;
+	text-align: center;
+	color: #033B2F;
+}
+
+.union-wrapper .consult p {
+	font-size: 18px;
+	line-height: 30px;
+	text-align: center;
+	color: #033B2F;
+	min-height: 116px;
+}
+
+.section-head .section-seperator {
+	width: 140px;
+	border: 1px solid #BBD86E;
+	margin: 120px auto 35px;
+	position: relative;
+}
+
+.section-head .section-seperator.section-seperator-loved {
+	margin: 0px auto 35px;
+}
+
+.section-head .section-seperator::before {
+	content: '';
+	width: 20px;
+	height: 20px;
+	border: 2px solid #BBD86E;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: -20px;
+}
+
+.section-head .section-seperator::after {
+	content: '';
+	width: 20px;
+	height: 20px;
+	border: 2px solid #BBD86E;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: -20px;
+}
+
+.section-head h2 {
+	font-family: 'Proxima Nova Th';
+	font-weight: 800;
+	font-size: 60px;
+	line-height: 60px;
+	text-align: center;
+	margin-bottom: 20px;
+	color: #BBD86E;
+}
+
+.section-head p {
+	font-size: 32px;
+	line-height: 39px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.video-head {
+	position: relative;
+	top: -317px;
+}
+
+.video-head .section-seperator {
+	margin: 0 auto 35px;
+}
+
+/* health care css ends here */
+/* your loved css starts here */
+.your-loved {
+	background-color: #F3F5EE;
+	margin-top: -146px;
+}
+
+.your-loved .vedio-embed {
+	position: relative;
+	top: -130px;
+}
+.embed-responsive.embed-responsive-16by9{
+	border-radius: 8px;
+}
+.loved-head{
+	margin-top: -15px;
+}
+.loved-head h6 {
+	font-size: 26px;
+	line-height: 32px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #033B2F;
+}
+
+.loved-head p {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+	color: #033B2F;
+	margin-bottom: 65px;
+}
+.playing-out .card-solution-mb{
+	display: none !important;
+}
+.card-flip {
+	height: 593px;
+	-webkit-transition: all ease-out 0.5s;-o-transition: all ease-out 0.5s;transition: all ease-out 0.5s;
+	display:  block !important;
+  }
+
+  @media screen and (min-width: 992px) {
+	.card-flip:hover .card-flip-front {
+		-webkit-transform: rotateY(-180deg);		transform: rotateY(-180deg);
+	  }
+	  .card-flip:hover .card-flip-back {
+		-webkit-transform: rotateY(0deg);		transform: rotateY(0deg);
+	  }
+  }
+
+.card-flip-front.bar {
+	-webkit-transform: rotateY(-180deg);		transform: rotateY(-180deg);
+  }
+  .card-flip-back.bar {
+	-webkit-transform: rotateY(0deg);		transform: rotateY(0deg);
+  }
+  
+  .card-flip-front {
+	height: 100%;
+	position: absolute;
+	background-color: #fff;
+	-webkit-backface-visibility: hidden;
+	        backface-visibility: hidden;
+	-webkit-transform: rotateY(0deg);
+	        transform: rotateY(0deg);
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+	text-align: center;
+	-webkit-box-shadow: 0px 6px 10px rgba(3, 59, 47, 0.13);
+	        box-shadow: 0px 6px 10px rgba(3, 59, 47, 0.13);
+	border-radius: 8px;
+	padding: 48px 22px 0 22px;
+	left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 90%;
+  }
+  
+  .card-flip-back {
+	height: 100%;
+	/* position: absolute; */
+	background-color: #fff;
+	-webkit-backface-visibility: hidden;
+	        backface-visibility: hidden;
+	-webkit-transform: rotateY(180deg);
+	        transform: rotateY(180deg);
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+	color: #ffffff;
+	text-align: center;
+	-webkit-box-shadow: 0px 6px 10px rgba(3, 59, 47, 0.13);
+	        box-shadow: 0px 6px 10px rgba(3, 59, 47, 0.13);
+	border-radius: 8px;
+	padding: 48px 22px 0 22px;
+	
+  }
+  .card-flip .card-img-top {
+	padding-bottom: 31px;
+  }
+  .card-flip .card-title1 {
+	font-size: 24px;
+	line-height: 1.22;
+	text-align: center;
+	font-weight: bold;
+	color: #033B2F;
+	padding-bottom: 30px;
+	margin-bottom: 0;
+}
+.card-flip .card-text1 {
+	font-size: 18px;
+	line-height: 1.55;
+	text-align: center;
+	font-weight: 400;
+	color: #033B2F;
+	max-width: 263px;
+	margin: 0 auto;
+}
+/* your loved css ends here */
+/* Story Style Starts Here */
+.story-wrapper {
+	padding: 160px 0;
+}
+
+/* #story{
+	position: relative;
+}
+#story::before{
+	position: absolute;
+	content: '"';
+	font-size: 150px;
+	font-family: 'Proxima Nova Rg';
+} */
+.story-item-2 {
+	margin-top: -115px;
+}
+
+.card-story .card-video {
+	overflow: hidden;
+	/* -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d; */
+	border-radius: 10px;
+}
+
+.card-story {
+	margin-top: 10px;
+	position: relative;
+	-webkit-box-shadow: 0px 6px 10px rgba(3, 59, 47, 0.13);
+	-moz-box-shadow: 0px 6px 10px rgba(3, 59, 47, 0.13);
+	box-shadow: 0px 6px 10px rgba(3, 59, 47, 0.13);
+	padding: 10px;
+	background: #F3F5EE;
+	border-radius: 8px;
+
+}
+
+.card-story .card-content {
+	padding: 10px;
+	max-height: 211px;
+}
+
+.card-story .card-content .card-text {
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 1.55;
+	text-align: center;
+	max-width: 263px;
+	margin: 40px auto 70px auto;
+}
+
+.btn-custom {
+	background-color: transparent;
+	font-size: 18px;
+}
+
+/* Story Style Ends Here */
+/* Booking Styles Starts here */
+.booking-wrapper {
+	background: linear-gradient(180deg, #0B5B30 0%, #158327 100%);
+	height: 430px;
+}
+.booking-img {
+	transform: translateY(-25px);
+}
+.booking-img #booking-img-hover:hover {
+	content: url('../images/booking-hover.png');
+	
+} 
+
+  .bg-container {
+	position:relative;
+	
+  }
+  .bg-container:before{
+	content: '';
+	display: block;
+	padding-top: 56.25%;
+	height: 0;
+  }
+  .bg-block {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  }
+  
+  .bg-block.active {
+	filter: alpha(opacity=100);
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+	opacity:1;
+  }
+
+.booking-content-wrap {
+	display: flex;
+	align-items: center;
+	height: 430px;
+	padding-left: 20px;
+}
+
+.booking-heading {
+	font-size: 46px;
+	line-height: 1.2;
+	font-weight: bolder;
+	color: #fff;
+}
+
+.booking-content .popup-btn-wrap {
+	margin-top: 50px;
+}
+
+.booking-content .popup-btn-wrap::before {
+	z-index: 0;
+}
+
+.booking-content .popup-btn-wrap .popup-btn {
+	color: #fff;
+	background: linear-gradient(180deg, #14792b 0%, #13782a 0%);
+
+}
+
+.popup-btn-wrap .popup-btn:focus {
+	outline: none;
+}
+
+.popup-btn-wrap .popup-btn {
+	border: 0;
+}
+
+.popup-btn-extra {
+	background-color: transparent;
+	z-index: 5;
+}
+
+.story-head {
+	background-image: url(../images/Vector-1.png);
+	background-size: cover;
+	background-position: center;
+	padding-top: 253px;
+	margin-top: -253px;
+}
+
+/* Booking Style Ends Here */
+/* footer css starts here */
+.footer-wrap {
+	padding-top: 190px;
+}
+.footer-wrap .wg-logo img{
+	width: 206px;
+}
+
+.footer-wrap .footer-inner {
+	display: flex;
+}
+
+.footer-wrap .wg-consulting {
+	width: 35%;
+	margin-right: 110px;
+	padding-bottom: 17px;
+}
+
+.footer-wrap .wg-consulting .wg-logo a img {
+	width: 206px;
+}
+
+.footer-wrap .wg-consulting p {
+	padding-left: 20px;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 26px;
+	letter-spacing: 0.04em;
+	color: #033B2F;
+	opacity: 0.6;
+	margin-bottom: 10px;
+}
+.footer-wrap .wg-contact{
+	width: 35%;
+}
+.footer-wrap .wg-contact ul {
+	padding-left: 14px;
+}
+
+.footer-wrap .wg-contact ul li {
+	margin-bottom: 14px;
+	display: flex;
+	align-items: center;
+}
+
+.footer-wrap .wg-contact ul li a {
+	font-size: 14px;
+	line-height: 26px;
+	letter-spacing: 0.02em;
+	color: #033B2F;
+	opacity: 0.6;
+	white-space: nowrap;
+}
+
+.footer-wrap .wg-contact ul li a img {
+	width: 20px;
+	margin-right: 7px;
+}
+
+.nav-head {
+	font-family: 'Proxima Nova Th';
+	font-weight: 800;
+	font-size: 14px;
+	line-height: 26px;
+	letter-spacing: 0.04em;
+	color: #033B2F;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+}
+
+.footer-wrap .wg-navigation {
+	margin-right: 70px;
+}
+
+.footer-wrap .wg-navigation ul li a {
+	font-size: 14px;
+	line-height: 26px;
+	letter-spacing: 0.04em;
+	color: #033B2F;
+	opacity: 0.6;
+}
+.wg-contact-address {
+	display: flex;
+	align-items: flex-start;
+}
+
+.footer-wrap .wg-follow ul {
+	display: flex;
+	align-items: center;
+}
+
+.footer-wrap .wg-follow ul li {
+	margin-right: 8px;
+}
+
+.footer-wrap .wg-follow ul li .social-icons {
+	width: 40px;
+	height: 40px;
+	background-image: url("../images/socials.png");
+	background-repeat: no-repeat;
+	transition: all ease 0.7s;
+	background-size: 124px;
+}
+.footer-wrap .wg-follow ul li .s-icon-1{
+	background-position:  0 0;
+}
+.footer-wrap .wg-follow ul li .s-icon-2{
+	background-position:  -43px 0;
+}
+.footer-wrap .wg-follow ul li .s-icon-3{
+	background-position:  -84px 0;
+}
+.footer-wrap .wg-follow ul li .s-icon-1:hover{
+	background-position:  0 -43px;
+}
+.footer-wrap .wg-follow ul li .s-icon-2:hover{
+	background-position:  -43px -43px;
+}
+.footer-wrap .wg-follow ul li .s-icon-3:hover{
+	background-position:  -84px -43px;
+}
+
+.footer-wrap .copy-right {
+	font-size: 12px;
+	line-height: 26px;
+	letter-spacing: 0.04em;
+	color: #033B2F;
+	opacity: 0.5;
+	border-top: 1px solid #033B2F;
+	padding-top: 13px;
+	padding-bottom: 50px;
+}
+
+/* footer css ends here */
+
+
+   /* .calendly-overlay .calendly-popup-close {
+    top: 24% !important;
+    right: 28% !important;
+} */
+/* responsive css starts here */
+
+/* @media(max-width:1600px) {
+	.calendly-overlay  .calendly-popup-close {   
+	top: 12% !important;
+	right: 22.5% !important;
+   }
+} */
+
+
+
+@media(max-width:1199px) {
+	.container {
+		max-width: 100%;
+		padding: 0 20px;
+	}
+
+	.footer-wrap .wg-consulting {
+		width: 44%;
+		margin-right: 70px;
+	}
+}
+
+@media(max-width:1024px) {
+	.story-wrapper{
+		overflow: hidden;
+	}
+	.hero-views::before {
+		width: 75%;
+		height: 80%;
+		border: 4px solid #BBD86E;
+		right: -15px;
+		top: -2.5%;
+	}
+	.booking-wrapper {
+		height: 360px;
+	}
+	.booking-heading {
+		font-size: 36px;
+	}
+	/* .booking-img {
+		transform: translateY(-20px);
+	} */
+	.booking-content-wrap {
+		height: 360px;
+	}
+}
+
+@media(max-width:991px) {
+	.mobile-nav {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background-color: #000;
+		padding: 20px;
+		border-radius: 5px;
+		z-index: 1;
+	}
+
+	#nav-icon4 span:nth-child(1) {
+		top: 0px;
+		-webkit-transform-origin: left center;
+		-moz-transform-origin: left center;
+		-o-transform-origin: left center;
+		transform-origin: left center;
+	}
+	#nav-icon4 span:nth-child(2) {
+		top: 18px;
+		-webkit-transform-origin: left center;
+		-moz-transform-origin: left center;
+		-o-transform-origin: left center;
+		transform-origin: left center;
+	}
+	#nav-icon4 span:nth-child(3) {
+		top: 36px;
+		-webkit-transform-origin: left center;
+		-moz-transform-origin: left center;
+		-o-transform-origin: left center;
+		transform-origin: left center;
+	}
+
+	#nav-icon4.open span:nth-child(1) {
+		-webkit-transform: rotate(45deg);
+		-moz-transform: rotate(45deg);
+		-o-transform: rotate(45deg);
+		transform: rotate(45deg);
+		top: -3px;
+		left: 8px;
+		background-color: #fff;
+		transform: translate(6px, -4px) rotate(45deg);
+		z-index: 111;
+		height: 3px;
+
+	}
+
+	#nav-icon4.open span:nth-child(3) {
+
+		width: 0%;
+		opacity: 0;
+	}
+
+	#nav-icon4.open span:nth-child(2) {
+		top: 39px;
+		left: 8px;
+		transform: translate(6px, 7px) rotate(-45deg);
+		background-color: #fff;
+		height: 3px;
+		z-index: 999;
+
+	}
+
+	.hero-views::before {
+		right: -15px;
+	}
+
+	.mobile-nav-icon:focus {
+		outline: 0;
+
+	}
+
+	.mobile-nav-icon {
+		z-index: 111;
+		right: 22px;
+	}
+
+	.mobile-nav-icon span {
+		display: block;
+		background-color: #000;
+		width: 30px;
+		height: 2.24px;
+		margin-bottom: 7px;
+		border-radius: 8px;
+	}
+
+	.mobile-nav ul {
+		display: flex;
+		flex-direction: column;
+		padding: 100px 50px 0px;
+	}
+	/* .sticky {
+		position: fixed;
+		top: 0;
+		width: 100%;
+	}
+	.sticky + #hero-area {
+		padding-top: 60px;
+	  } */
+	.header-wrap .navbar-nav .nav-item {
+		margin-right: 0;
+	}
+
+	.header-wrap .navbar-nav .nav-item a {
+		padding: 0;
+		font-weight: 500;
+		font-size: 25px;
+		line-height: 40px;
+		text-transform: uppercase;
+		opacity: 1.8;
+		color: #ffff;
+	}
+
+	.mobile-nav-icon span:last-child {
+		margin-bottom: 0;
+		width: 20px;
+		margin-left: auto;
+	}
+
+	.mobile-logo {
+		display: block;
+	}
+
+	.header-wrap .navbar-brand {
+		display: none;
+	}
+
+	.union-wrapper .consult {
+		border-radius: 8px;
+		padding: 40px 20px;
+	}
+
+	.union-wrapper .consult p {
+		font-size: 16px;
+		line-height: 27px;
+	}
+
+	.video-head {
+		position: relative;
+		top: -160px;
+	}
+
+	.section-head h2 {
+		font-size: 45px;
+		line-height: 53px;
+	}
+
+	.union-wrapper {
+		padding-bottom: 95px;
+	}
+
+	/* .playing-out .card {
+		min-height: 520px;
+		padding: 30px 10px 0;
+	} */
+	
+	
+	/* .playing-out {
+		overflow-x: hidden;
+	} */
+
+	.playing-out .card .card-text {
+		font-size: 16px;
+	}
+
+	.playing-out .card-body {
+		padding: 0.65rem;
+	}
+
+	.playing-out .card .card-title {
+		font-size: 18px;
+		line-height: 1.22;
+	}
+
+	.card-story .card-content .card-text {
+		font-size: 16px;
+	}
+
+	.card-story .card-content {
+		max-height: 234px;
+	}
+
+	.booking-heading {
+		font-size: 30px;
+	}
+
+	.booking-wrapper {
+		height: auto;
+		padding-bottom: 70px;
+	}
+	.footer-wrap .footer-inner{
+		flex-wrap: wrap;
+	}
+	.footer-wrap .wg-consulting {
+		width: 60%;
+		margin-right: 20px;
+	}
+
+	.footer-wrap .wg-navigation {
+		margin-right: 40px;
+	}
+
+	.footer-wrap {
+		padding-top: 70px;
+	}
+
+	.hero-title {
+		font-size: 47px;
+	}
+
+	.hero-subtitle {
+		font-size: 20px;
+		margin-bottom: 12px;
+	}
+
+	.popup-btn-wrap .popup-btn {
+		font-size: 16px;
+	}
+	#hero-area {
+		padding-bottom: 30px;
+	}
+	.booking-wrapper {
+		height: 256px;
+		padding-bottom: 0;
+	}
+	.banner-flex {
+		padding-bottom: 50px;
+	}
+	.header-wrap .navbar-nav .nav-item a{
+		border-top: unset;
+		border-bottom: unset;
+	}
+	.booking-content-wrap {
+		height: 256px;
+	}
+	/* .booking-wrapper {
+		height: 100%;
+	} */
+	/* .booking-img {
+		transform: translateY(0px);
+	} */
+	.booking-img {
+		transform: translateY(-65px);
+	}
+	
+}
+
+@media(max-width:767px) {
+	.mobile-logo {
+		display: block;
+	}
+
+	.banner-logo {
+		display: block;
+		max-width: 206px;
+		margin: 20px auto 0;
+	}
+
+	.header-wrap .navbar-brand {
+		display: none;
+	}
+
+	#hero-area {
+		padding-top: 30px;
+		overflow: hidden !important;
+	}
+	.hero-text {
+		max-width: unset;
+	}
+
+	.footer-wrap .footer-inner {
+		flex-wrap: wrap;
+		padding-bottom: 31px;
+	}
+
+	.footer-wrap .wg-consulting {
+		max-width: 100%;
+		order: 1;
+	}
+	.footer-wrap .wg-contact{
+		width: 100%;
+		order: 3;
+	}
+
+	.footer-wrap .wg-navigation {
+		max-width: 100%;
+		width: 100%;
+		padding-left: 14px;
+	}
+
+	.footer-wrap .wg-consulting ul {
+		padding-left: 14px;
+	}
+
+	.footer-wrap .wg-consulting p {
+		padding-left: 14px;
+	}
+
+	.footer-inner .wg-follow {
+		padding-left: 14px;
+		order: 2;
+		margin-bottom: 20px;
+	}
+	.booking-img {
+		transform: translateY(-25px);
+	}
+	.union-wrapper .consult {
+		margin-bottom: 20px;
+		height: auto;
+		padding: 40px 29px 59px;
+	}
+
+	.union-wrapper .union-inner {
+		top: -160px;
+	}
+
+	.union-wrapper .consult p {
+		font-size: 18px;
+	}
+
+	.section-head h2 {
+		font-size: 36px;
+		line-height: 45px;
+	}
+
+	.section-head p {
+		font-size: 22px;
+		line-height: 30px;
+	}
+
+	.your-loved .vedio-embed {
+		position: relative;
+		top: -160px;
+	}
+
+	.loved-head h6 {
+		font-size: 16px;
+	}
+
+	.playing-out .card .card-title {
+		font-size: 24px;
+		line-height: 1.22;
+	}
+
+	.playing-out .card .card-text {
+		font-size: 18px;
+		line-height: 28px;
+	}
+
+	.playing-out .card {
+		padding: 40px 35px 20px;
+		margin-bottom: 30px;
+	}
+
+	.playing-out .card-body {
+		padding: 0;
+	}
+
+	/* .story-item {
+		margin-bottom: 20px;
+	} */
+
+	/* .story-item-2 {
+		margin: 20px 0;
+	} */
+	.story-item-2 {
+		margin-top: unset;
+	}
+	.card-story{
+		max-width: 85%;
+		margin: 0 auto;
+	}
+	.story-item:last-child{
+		margin-bottom: 35px;
+	}
+
+	.card-story .card-content .card-text {
+		max-width: 100%;
+		margin: 40px 54px 70px;
+	}
+
+	.booking-content-wrap {
+		margin-top: 0;
+	}
+
+	.booking-heading {
+		font-size: 24px;
+	}
+
+	.popup-btn-wrap .popup-btn {
+		font-size: 18px;
+	}
+
+	.story-head .container {
+		padding: 0;
+	}
+
+	.story-head .card-story {
+		padding: 0;
+	}
+
+	.footer-wrap .wg-consulting {
+		width: 100%;
+	}
+
+	.hero-wrapper .hero-content {
+		max-width: 90%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.hero-views::before {
+		right: 0px;
+		top: -10px;
+		border: 3px solid #BBD86E;
+	}
+
+	.hero-title {
+		font-size: 35px;
+	}
+
+	.hero-grid-container {
+		max-width: 95%;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+
+	.banner-flex {
+		flex-direction: column-reverse;
+	}
+
+	.video-head {
+		top: -150px;
+	}
+
+	.hero-text {
+		font-size: 16px;
+	}
+
+	.hero-subtitle-mb {
+		font-size: 16px !important;
+		margin-bottom: 0;
+	}
+	.booking-wrapper {
+		height: auto;
+		padding-bottom: 70px;
+	}
+	.header-wrap .navbar-nav .nav-item a{
+		border-top: unset;
+		border-bottom: unset;
+	}
+	.flip-card-last{
+		margin-top: 20px;
+	}
+	.union-wrapper {
+		padding-top: 175px;
+		padding-bottom: 0;
+	}
+	.your-loved {
+		margin-top: -15px;
+	}
+	.union-wrapper .union-inner {
+		top: -175px;
+	}
+	.story-wrapper {
+		padding: 40px 0;
+	}
+	.booking-content-wrap{
+		margin-top: 45%;
+	}
+	/* .calendly-overlay .calendly-popup-close {
+		top: 3.5% !important;
+		right: 0% !important;
+	} */
+	.playing-out {
+		overflow: hidden !important;
+	}
+	/* S */
+	.playing-out .card-solution-mb {
+		box-shadow: 0px 6px 10px rgba(3, 59, 47, 0.13);
+		border-radius: 8px;
+		padding: 25px 15px;
+		/* transform-style: preserve-3d; */
+		/* transform-origin: center right; */
+		
+		display: block !important;
+		background-color: #fff;
+		min-height: 445px;
+		margin-top: 20px;
+
+		
+	}
+	
+	.playing-out .card-solution-mb .card-img-top {
+		padding-bottom: 20px;
+	}
+		
+	.playing-out .card-solution-mb .card-title {
+		font-size: 20px;
+		line-height: 1.22;
+		text-align: center;
+		font-weight: bold;
+		color: #033B2F;
+		padding-bottom: 20px;
+		margin-bottom: 0;
+	}
+		
+	.playing-out .card-solution-mb .card-text {
+		font-size: 16px;
+		line-height: 1.55;
+		text-align: center;
+		font-weight: 400;
+		color: #033B2F;
+		max-width: 263px;
+		margin: 0 auto;
+	}
+		
+	.playing-out .card-solution-mb:hover #card-img-1 {
+		content: url('../images/card1-hover.png');
+	}
+		
+	.playing-out .card-solution-mb:hover #card-img-2 {
+		content: url('../images/card2-hover.png');
+	}
+	.playing-out .card-solution-mb:hover #card-img-3 {
+		content: url('../images/card3-hover.png');
+	}
+		
+	.playing-out .card-solution-mb:hover .card-title span {
+		display: none;
+	}
+		
+	.playing-out .card-solution-mb:hover .card-text span {
+		display: none;
+	}
+	.playing-out .card-solution-mb:hover .card-1-title::before {
+		content: 'Find out if you qualify for Medicaid';
+	}
+		
+	.playing-out .card-solution-mb:hover .card-1-text::before {
+		content: 'Book a consultation with one of our experts. We will then assess your case and the steps involved in making you or your loved one eligible for Medicaid.';
+	}
+		
+	.playing-out .card-solution-mb:hover .card-2-title::before {
+		content: 'Feel reassured with the right expert advice';
+	}
+		
+	.playing-out .card-solution-mb:hover .card-2-text::before {
+		content: 'Our experts will take the lead and give you the right information about what Medicaid services you can be covered for. We can offer you additional ways to save money by enrolling you or your loved one in a Medicaid Savings Program.';
+	}
+		
+	.playing-out .card-solution-mb:hover .card-3-title::before {
+		content: 'Let our Medicaid consultants do the work';
+	}
+		
+	.playing-out .card-solution-mb:hover .card-3-text::before {
+		content: 'We will take care of processing complicated Medicaid applications and renewals, and assist you every step of the way - so you don’t have to get lost in all the paperwork.';
+	}
+}
+
+@media(max-width:640px) {
+	.your-loved .vedio-embed {
+		top: -104px;
+	}
+	.header-wrap .navbar-nav .nav-item a{
+		border-top: unset;
+		border-bottom: unset;
+	}
+	.booking-content-wrap {
+		height: unset;
+	}
+	/* .calendly-overlay .calendly-popup-close {
+		top: 3.5% !important;
+		right: 0% !important;
+	} */
+
+}
+
+@media(max-width:575px) {
+	
+}
+
+@media(max-width:425px) {
+	.story-wrapper {
+		overflow: hidden;
+	}
+	.hero-title {
+		font-size: 40px;
+		font-weight: 800;
+	}
+	.hero-text {
+		max-width: 303px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.union-wrapper .consult p {
+		max-width: 263px;
+		margin: 0 auto;
+	}
+	.header-wrap .navbar-nav .nav-item a{
+		border-top: unset;
+		border-bottom: unset;
+	}
+	.booking-content-wrap {
+		height: unset;
+	}
+	.card-flip-front {
+		padding: 25px 15px 0 15px;
+		
+	}
+	.card-flip {
+		height: 480px;
+		transition: all ease-out 0.5s;
+	}
+	.card-flip .card-img-top{
+		padding-bottom: 20px;
+	}
+	.flip-responsive{
+		margin: 15px 0;
+	}
+	.card-flip .card-title1{
+		padding-bottom: 20px;
+		font-size: 20px;
+		max-width: 283px;
+		margin: 0 auto;
+	}
+	.card-flip .card-text1{
+		font-size: 16px;
+	}
+	.card-solution-mb-last{
+		margin-top: unset;
+	}
+	
+	
+}
+
+@media(max-width:380px) {
+	.popup-btn-wrap .popup-btn {
+		font-size: 14px;
+	}
+	.popup-btn-wrap{
+		margin-top: 40px;
+	}
+	.section-head h2 {
+		font-size: 29px;
+		line-height: 40px;
+	}
+	.section-head .section-seperator {
+		margin: 90px auto 15px;
+	}
+	.story-wrapper {
+	overflow: hidden;
+	padding: 30px 0;
+	}
+	.loved-head h2{
+		margin-bottom: 0;
+	}
+	.card-story .card-content .card-text {
+		margin: 40px 35px 40px;
+	}
+	.hero-subtitle-mb{
+		color: #033B2F;
+	}
+	.union-wrapper{
+		padding-top: 187px;
+		padding-bottom: 30px;
+	}
+	.union-wrapper .consult {
+		padding: 40px 20px 59px;
+	}
+	.consult-last{
+		margin-bottom: 0px !important;
+	}
+	.video-head .section-seperator{
+		margin: 34px auto 16px;
+	}
+	.section-head .section-seperator.section-seperator-loved {
+		margin: -37px auto 35px;
+	}
+	.loved-head p{
+		margin-bottom: 36px;
+	}
+	
+	.booking-heading {
+		font-size: 21px;
+		text-align: center;
+	}
+	.booking-content-wrap{
+		padding-left: 10px;
+	}
+	.header-wrap .navbar-nav .nav-item a{
+		border-top: unset;
+		border-bottom: unset;
+	}
+	.booking-content-wrap {
+		height: unset;
+	}
+	/* .booking-content-wrap {
+		margin-top: 15px;
+	} */
+	/* .booking-img {
+		transform: translateY(-15px);
+	} */
+	
+	
+	
+}
+@media (min-width: 768px) and (max-width: 991.98px) { 
+	.union-wrapper {
+		padding-bottom: 0px;
+		padding-top: 300px;
+		
+	}
+	.union-wrapper .union-inner {
+		top: -300px;
+	}
+	.video-head {
+		top: -210px;
+	}
+	.your-loved {
+		background-color: #F3F5EE;
+		margin-top: -49px;
+	}
+	.card-flip{
+		height: 515px;
+	}
+	.card-flip-back {
+		padding: 20px 15px 0 15px;
+	}
+	.card-flip-front {
+		padding: 20px 15px 0 15px;
+	}
+	.card-flip .card-img-top {
+		padding-bottom: 15px;
+	}
+	.card-flip .card-title1 {
+		font-size: 22px;
+		padding-bottom: 15px;
+	}
+	.card-flip .card-text1{
+		font-size: 16px;
+	}
+	.flip-card-last{
+		overflow: hidden;
+	}
+	.playing-out{
+		overflow-x: hidden !important;
+	}
+ }
+
+@media(max-width:320px) {}
+
+/* responsive css ends here */
