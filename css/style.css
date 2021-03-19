@@ -906,7 +906,10 @@ ul {
 	background-image: url("../images/socials.png");
 	background-repeat: no-repeat;
 	transition: all ease 0.7s;
-	background-size: 124px;
+	background-size: 180px;
+}
+.footer-wrap .wg-follow ul li:nth-last-child(1) .social-icons {
+	width: 55px;
 }
 .footer-wrap .wg-follow ul li .s-icon-1{
 	background-position:  0 0;
@@ -917,6 +920,9 @@ ul {
 .footer-wrap .wg-follow ul li .s-icon-3{
 	background-position:  -84px 0;
 }
+.footer-wrap .wg-follow ul li .s-icon-4{
+	background-position:  -126px 0;
+}
 .footer-wrap .wg-follow ul li .s-icon-1:hover{
 	background-position:  0 -43px;
 }
@@ -925,6 +931,9 @@ ul {
 }
 .footer-wrap .wg-follow ul li .s-icon-3:hover{
 	background-position:  -84px -43px;
+}
+.footer-wrap .wg-follow ul li .s-icon-4:hover{
+	background-position:  -126px -43px;
 }
 
 .footer-wrap .copy-right {
